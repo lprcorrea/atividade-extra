@@ -1,0 +1,122 @@
+/* Estilos para o formulário e a tabela */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px; /* Ajustando o tamanho do título */
+    color: #4CAF50; /* Cor verde */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px 16px; /* Ajuste o valor de padding para diminuir o tamanho */
+    font-size: 14px; /* Ajuste o tamanho da fonte */
+    width: auto; /* Para garantir que o botão se ajuste ao conteúdo */
+    height: auto; /* Ajuste a altura do botão */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="reset"] {
+    background-color: #919191;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px 16px; /* Ajuste o valor de padding para diminuir o tamanho */
+    font-size: 14px; /* Ajuste o tamanho da fonte */
+    width: auto; /* Para garantir que o botão se ajuste ao conteúdo */
+    height: auto; /* Ajuste a altura do botão */
+}
+
+input[type="reset"]:hover {
+    background-color: #7e8082;
+}
+
+.dados {
+    display: none;
+    animation: fadeIn 1s forwards;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#voltar-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#voltar-btn:hover {
+    background-color: #45a049;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
